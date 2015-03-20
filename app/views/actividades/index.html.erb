@@ -1,0 +1,24 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      
+    </tr>
+  </thead>
+
+ 
+
+  <% @proyectos.each do |proyecto| %>
+    <tr>
+      <td><%= proyecto.name %></td>
+      <% proyecto.tareas.each do |tarea| %>
+        <td><%=  tarea.name %></td>
+
+      <% end %>
+   
+        
+      </td>
+    </tr>
+  <% end %>
+
+</table>
